@@ -13,7 +13,7 @@ function NotesList({noteText,noteIndex,deleteHandler}){
   return(  
     <div className='container'> 
                                       
-    <span className='element'><h4 className='elementtitle'>NOTE TITLE</h4>
+    <span className='element'><h4 onClick={toggleModal} className='elementtitle'>NOTE TITLE</h4>
     {modal &&(
     <div className='modal'>
       <div onClick={toggleModal} className='overlay'>
@@ -25,7 +25,7 @@ function NotesList({noteText,noteIndex,deleteHandler}){
     </div>
       
     
-    )}<span style={{fontSize:'14px',margin:'4px'}}>{noteText}</span><button onClick={() => deleteHandler(noteText,noteIndex)} className='closebutton'>x</button>
+    )}<span onClick={toggleModal} style={{fontSize:'14px',margin:'4px'}}>{noteText}</span><button onClick={() => deleteHandler(noteText,noteIndex)} className='closebutton'>x</button>
     
     </span>
     </div>
