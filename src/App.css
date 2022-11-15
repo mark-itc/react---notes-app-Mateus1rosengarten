@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fullpagediv{
+ 
+  height:100vh;
+  width: 100vw;
+}
+
+.container{
+  display:inline;
+   
+}
+
+.notebox{
+  background-color:#F9F9F9;
+  height:30vh;
+  width:30vw;
+  margin-top: 40px;
+  margin-left:450px;
+  margin-bottom: 20px;
+  border:2px solid;
+}
+
+.h1style{
+  text-align:center;
+}
+
+.addbutton{
+  
+  position:relative;
+  top:127px;
+  width:432px;
+  background-color:#C8C2BC;
+}
+
+.resultdiv{
+  position:absolute;
+  top:250p;
+  left:250px;
+  width:70vw;
+}
+
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49,49,49,0.8);
+}
+.modal-content {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #B4CDE6;
+  padding: 14px 28px;
+  border: 2px solid;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.element{
+  display: inline-block;
+   border: 1px solid;
+   margin: 10px;
+}
+
+.elementtitle{
+  text-align:center;
+  font-weight:bold;
+}
+
+.elementmodal{
+  display:inline-block;
+  border:1px solid;
+  margin:10px;
+  margin-left:30px;
+}
+
+.titlemodal{
+  text-align:center;
+  font-weight:bold;
+}
+
+.closebutton{
+  padding: 1px;
+margin: 3px;
+  border:1px solid;
+  border-radius:50%;
+  width:18px;
+  height:18px;
+  background-color:#C8C2BC;
+
+}
