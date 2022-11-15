@@ -1,3 +1,4 @@
+
 import './App.css';
 import { useState } from 'react';
 
@@ -7,7 +8,7 @@ function NotesList({noteText,deleteHandler}){
     <div style={{display:'inline', flexDirection:'row'}}> 
                                       
     <span style={{display:'inline-block', border:'1px solid',margin:'10px',fontWeight:'bold'}}>{noteText}</span>
-   
+    <button onClick={() => deleteHandler(noteText)} style={{border:'1px solid',borderRadius:'50%',width:'25px',height:'25px',marginTop:'5px'}}>x</button>
  
     </div>
     )
@@ -31,6 +32,16 @@ function AddNotesComponent(){
 
   }
 
+
+  
+  const closeNoteHandle = (itemDelete) => {                                       
+  const promptmessage = window.confirm('Are you sure you want to delete your note?')
+  const itensNotDeleted = result.filter((element) => element !== itemDelete )
+   {promptmessage && setResult(itensNotDeleted)}
+    
+  }
+
+
   
   return(                                                       
     <>
@@ -43,7 +54,7 @@ function AddNotesComponent(){
     {result.map((item,index) =>(<NotesList
     key={item + index.toString()}
     noteText={item}
-    
+    deleteHandler={closeNoteHandle}
      />
     ))}
     </div>
