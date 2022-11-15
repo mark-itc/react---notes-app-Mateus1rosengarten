@@ -3,14 +3,14 @@
 import { useState } from 'react';
 
 function NotesList({noteText,noteIndex,deleteHandler}){   
-  console.log(noteIndex)                     //// LIST COMPONENT
+  console.log(noteIndex)                    
   const [modal,setModal] = useState(false);
 
   const toggleModal = () =>{
     setModal(!modal)
   }
 
-  return(  /// JSX RETURN ELEMENTS RESULTS
+  return(  
     <div className='container'> 
                                       
     <span onClick={toggleModal} className='element'><h4 className='elementtitle'>NOTE TITLE</h4>
