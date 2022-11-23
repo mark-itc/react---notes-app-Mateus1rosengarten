@@ -65,7 +65,7 @@
 .addbutton{
   
   position:relative;
-  top:127px;
+  top:132px;
   width:432px;
   background-color:#C8C2BC;
 }
@@ -75,6 +75,7 @@
   top:250p;
   left:250px;
   width:70vw;
+ 
 }
 
 .modal, .overlay {
@@ -97,7 +98,7 @@
   transform: translate(-50%, -50%);
   line-height: 1.4;
   background: #B4CDE6;
-  padding: 14px 28px;
+  padding: 28px 56px;
   border: 2px solid;
   border-radius: 3px;
   max-width: 600px;
@@ -108,7 +109,8 @@
   display: inline-block;
    border: 1px solid;
    margin: 10px;
-}
+   background-color: #F9F9F9;
+  }
 
 .elementtitle{
   text-align:center;
@@ -116,10 +118,13 @@
 }
 
 .elementmodal{
+  height: 100px;
+
   display:inline-block;
   border:1px solid;
   margin:10px;
   margin-left:30px;
+  background-color: #F9F9F9;
 }
 
 .titlemodal{
@@ -129,11 +134,45 @@
 
 .closebutton{
   padding: 1px;
-margin: 3px;
+  margin: 3px;
   border:1px solid;
-  border-radius:50%;
+  color: red;
   width:18px;
   height:18px;
   background-color:#C8C2BC;
+
+}
+
+.inputStyle{
+  width: 425px;
+  margin-top: 5px; 
+  margin-left: 1.5px;
+  border: none;
+  background-color: #F9F9F9;
+}
+
+.textStyle{
+  width: 425px;
+  margin-top: 15px; 
+  margin-left: 1.5px;
+  resize: none;
+  border: none;
+  background-color: #F9F9F9;
+}
+
+.inputchange{
+  display: block;
+  width: 240px;
+  margin: 5px;
+  border: none;
+  background-color: #F9F9F9;
+}
+
+.textchange{
+  width: 240px;
+  margin: 5px ;
+  resize: none;
+  border: none;
+  background-color: #F9F9F9;
 
 }
